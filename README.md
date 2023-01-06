@@ -1,4 +1,4 @@
-# rps_cellular_automata
+# rps-cellular-automata
 Rock-Paper-Scissors cellular automata  
 
 Click and drag to draw colored tiles with 3 available colors  
