@@ -132,7 +132,7 @@ def init():
 	b = Board(start_x, start_y, n_tile_x, n_tile_y, tile_x, tile_y)
 	return window, canvas, shader, clock, b
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	loop = True
 	mouse_down = False
 	last_col = COLOR2
