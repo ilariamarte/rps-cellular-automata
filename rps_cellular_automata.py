@@ -152,7 +152,7 @@ if __name__ == '__main__':
 		b.interface(canvas,mouse_down)
 		b.update(canvas)
 		
-		shader.render(canvas) # Render the display onto the OpenGL display with the shaders!
+		shader.render(canvas) # Render the display onto the OpenGL display with the shaders
 		pygame.display.flip()
 
 pygame.quit()
