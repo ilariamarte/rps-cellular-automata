@@ -17,8 +17,8 @@ COLOR2    = "blue"
 COLOR3    = "cyan"
 
 dirname = os.path.dirname(__file__) # directory of the file in use
-vertex_dir = os.path.join(dirname, "shaders/vertex.txt")
-fragment_dir = os.path.join(dirname, "shaders/default_frag.txt")
+vertex_dir = os.path.join(dirname, "shader/vertex.txt")
+fragment_dir = os.path.join(dirname, "shader/default_frag.txt")
 
 start_x, start_y = 50,50
 n_tile_x, n_tile_y = 80,80
