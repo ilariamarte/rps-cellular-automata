@@ -97,7 +97,6 @@ class Board:
 	
 	def interface(self, screen, mouse_down):
 		"""mouse click on board"""
-		self.draw_board(screen)
 		x,y = pygame.mouse.get_pos()
 		if mouse_down and self.check_hit(x,y): # left click
 			self.mux = 1
@@ -118,6 +117,10 @@ class Board:
 		if self.mux and not mouse_down: # release left click
 			self.last_col = self.updated_color
 			self.mux = 0
+	
+	def reset(self):
+		self.color = np.full((n_tile_x, n_tile_y), "black")
+		self.gradient = np.full((n_tile_x, n_tile_y), 0)
 
 def init():
 	pygame.init()
@@ -152,6 +155,10 @@ if __name__ == "__main__":
 
 		b.interface(canvas,mouse_down)
 		b.update(canvas)
+		b.draw_board(canvas)
+
+		if pygame.key.get_pressed()[pygame.K_SPACE]:
+			b.reset()
 		
 		shader.render(canvas) # Render the display onto the OpenGL display with the shaders
 		pygame.display.flip()
