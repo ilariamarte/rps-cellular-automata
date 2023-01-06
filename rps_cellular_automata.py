@@ -121,7 +121,7 @@ class Board:
 
 def init():
 	pygame.init()
-	pygame.display.set_caption("Cellular Automata")
+	pygame.display.set_caption("RPS Cellular Automata")
 	window = pygame.display.set_mode( ( WINDOW_WIDTH, WINDOW_HEIGHT ), WINDOW_SURFACE )
 	canvas = pygame.Surface( ( WINDOW_WIDTH, WINDOW_HEIGHT ) )
 	canvas.fill( BLACK )
