@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import pygame
 import numpy as np
 from random import randint
